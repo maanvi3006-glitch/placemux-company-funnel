@@ -1,12 +1,22 @@
 """Simple ETL pipeline to produce dashboard export"""
 import os
+import sys
 import pandas as pd
+
+# Add parent dir to path for imports
+sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
+
+from analytics.cohort_analysis import compute_cohort_analysis
+from analytics.attribution import compute_attribution
+from analytics.forecasting import forecast_funnel_metrics
 
 # Use local relative paths to avoid import errors when running as a script
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 RAW_PATH = os.path.join(BASE_DIR, 'data', 'raw')
 PROCESSED_PATH = os.path.join(BASE_DIR, 'data', 'processed')
 EXPORT_PATH = os.path.join(BASE_DIR, 'data', 'exports', 'final_dashboard_data.csv')
+COHORT_PATH = os.path.join(BASE_DIR, 'data', 'exports', 'cohort_analysis.csv')
+ATTRIBUTION_PATH = os.path.join(BASE_DIR, 'data', 'exports', 'attribution.csv')
 
 
 def load_raw():
@@ -66,6 +76,25 @@ def main():
     # write the funnel export directly
     funnel.to_csv(EXPORT_PATH, index=False)
     print('Wrote export to', EXPORT_PATH)
+    
+    # Compute cohort analysis
+    cohort = compute_cohort_analysis(registrations)
+    if not cohort.empty:
+        cohort.to_csv(COHORT_PATH, index=False)
+        print('Wrote cohort analysis to', COHORT_PATH)
+    
+    # Compute attribution
+    attribution = compute_attribution(searches, registrations)
+    if not attribution.empty:
+        # merge with company names
+        attribution = attribution.merge(companies[['company_id', 'name']], on='company_id', how='left')
+        attribution.to_csv(ATTRIBUTION_PATH, index=False)
+        print('Wrote attribution to', ATTRIBUTION_PATH)
+    
+    # Compute forecast for next month
+    monthly_funnel = funnel.groupby('created_at')[['searches', 'registrations', 'jobs']].sum()
+    forecast = forecast_funnel_metrics(monthly_funnel)
+    print('Next month forecast:', forecast)
 
 
 if __name__ == '__main__':

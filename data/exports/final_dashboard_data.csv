@@ -1,13 +1,51 @@
 company_id,name,created_at,clean_name,searches,registrations,jobs,impressions,clicks,conversions
-1,Example Co,2023-02-01,example co,2.0,2.0,1.0,200,20,2
-1,Example Co,2023-03-01,example co,0.0,0.0,0.0,0,0,0
-1,Example Co,2023-04-01,example co,1.0,0.0,1.0,100,10,0
+1,Example Co,2023-02-01,example co,3.0,2.0,1.0,300,30,2
+1,Example Co,2023-03-01,example co,2.0,1.0,1.0,200,20,1
+1,Example Co,2023-04-01,example co,1.0,1.0,1.0,100,10,1
 1,Example Co,2023-05-01,example co,1.0,0.0,0.0,100,10,0
+1,Example Co,2023-06-01,example co,0.0,0.0,0.0,0,0,0
 2,Acme Recruiting,2023-02-01,acme recruiting,0.0,0.0,0.0,0,0,0
-2,Acme Recruiting,2023-03-01,acme recruiting,2.0,1.0,1.0,200,20,1
-2,Acme Recruiting,2023-04-01,acme recruiting,0.0,0.0,0.0,0,0,0
+2,Acme Recruiting,2023-03-01,acme recruiting,4.0,1.0,1.0,400,40,1
+2,Acme Recruiting,2023-04-01,acme recruiting,1.0,2.0,1.0,100,10,2
 2,Acme Recruiting,2023-05-01,acme recruiting,1.0,1.0,0.0,100,10,1
+2,Acme Recruiting,2023-06-01,acme recruiting,0.0,0.0,0.0,0,0,0
 3,DataWorks Ltd,2023-02-01,dataworks ltd,0.0,0.0,0.0,0,0,0
 3,DataWorks Ltd,2023-03-01,dataworks ltd,0.0,0.0,0.0,0,0,0
-3,DataWorks Ltd,2023-04-01,dataworks ltd,2.0,1.0,1.0,200,20,1
-3,DataWorks Ltd,2023-05-01,dataworks ltd,1.0,1.0,1.0,100,10,1
+3,DataWorks Ltd,2023-04-01,dataworks ltd,4.0,1.0,1.0,400,40,1
+3,DataWorks Ltd,2023-05-01,dataworks ltd,2.0,2.0,2.0,200,20,2
+3,DataWorks Ltd,2023-06-01,dataworks ltd,0.0,0.0,0.0,0,0,0
+4,TechVision Inc,2023-02-01,techvision inc,2.0,1.0,1.0,200,20,1
+4,TechVision Inc,2023-03-01,techvision inc,2.0,1.0,1.0,200,20,1
+4,TechVision Inc,2023-04-01,techvision inc,1.0,1.0,0.0,100,10,1
+4,TechVision Inc,2023-05-01,techvision inc,0.0,0.0,0.0,0,0,0
+4,TechVision Inc,2023-06-01,techvision inc,0.0,0.0,0.0,0,0,0
+5,NextGen Talent,2023-02-01,nextgen talent,0.0,0.0,0.0,0,0,0
+5,NextGen Talent,2023-03-01,nextgen talent,2.0,1.0,1.0,200,20,1
+5,NextGen Talent,2023-04-01,nextgen talent,2.0,2.0,1.0,200,20,2
+5,NextGen Talent,2023-05-01,nextgen talent,1.0,0.0,0.0,100,10,0
+5,NextGen Talent,2023-06-01,nextgen talent,0.0,0.0,0.0,0,0,0
+6,CloudJobs Pro,2023-02-01,cloudjobs pro,0.0,0.0,0.0,0,0,0
+6,CloudJobs Pro,2023-03-01,cloudjobs pro,0.0,0.0,0.0,0,0,0
+6,CloudJobs Pro,2023-04-01,cloudjobs pro,2.0,2.0,1.0,200,20,2
+6,CloudJobs Pro,2023-05-01,cloudjobs pro,3.0,1.0,1.0,300,30,1
+6,CloudJobs Pro,2023-06-01,cloudjobs pro,0.0,0.0,0.0,0,0,0
+7,AI Talent Hub,2023-02-01,ai talent hub,0.0,0.0,0.0,0,0,0
+7,AI Talent Hub,2023-03-01,ai talent hub,0.0,0.0,0.0,0,0,0
+7,AI Talent Hub,2023-04-01,ai talent hub,1.0,0.0,0.0,100,10,0
+7,AI Talent Hub,2023-05-01,ai talent hub,3.0,3.0,2.0,300,30,3
+7,AI Talent Hub,2023-06-01,ai talent hub,0.0,0.0,0.0,0,0,0
+8,DevOps Masters,2023-02-01,devops masters,0.0,0.0,0.0,0,0,0
+8,DevOps Masters,2023-03-01,devops masters,0.0,0.0,0.0,0,0,0
+8,DevOps Masters,2023-04-01,devops masters,0.0,0.0,0.0,0,0,0
+8,DevOps Masters,2023-05-01,devops masters,2.0,1.0,1.0,200,20,1
+8,DevOps Masters,2023-06-01,devops masters,2.0,2.0,1.0,200,20,2
+9,Analytics Experts,2023-02-01,analytics experts,0.0,0.0,0.0,0,0,0
+9,Analytics Experts,2023-03-01,analytics experts,0.0,0.0,0.0,0,0,0
+9,Analytics Experts,2023-04-01,analytics experts,0.0,0.0,0.0,0,0,0
+9,Analytics Experts,2023-05-01,analytics experts,1.0,0.0,0.0,100,10,0
+9,Analytics Experts,2023-06-01,analytics experts,3.0,2.0,2.0,300,30,2
+10,Design Studios,2023-02-01,design studios,0.0,0.0,0.0,0,0,0
+10,Design Studios,2023-03-01,design studios,0.0,0.0,0.0,0,0,0
+10,Design Studios,2023-04-01,design studios,0.0,0.0,0.0,0,0,0
+10,Design Studios,2023-05-01,design studios,1.0,0.0,1.0,100,10,0
+10,Design Studios,2023-06-01,design studios,3.0,2.0,1.0,300,30,2

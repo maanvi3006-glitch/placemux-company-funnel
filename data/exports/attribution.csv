@@ -1,0 +1,11 @@
+company_id,total_searches,total_registrations,conversion_rate,name
+1,7,4,0.5714,Example Co
+2,6,4,0.6667,Acme Recruiting
+3,6,3,0.5,DataWorks Ltd
+4,5,3,0.6,TechVision Inc
+5,5,3,0.6,NextGen Talent
+6,5,3,0.6,CloudJobs Pro
+7,4,3,0.75,AI Talent Hub
+8,4,3,0.75,DevOps Masters
+9,4,2,0.5,Analytics Experts
+10,4,2,0.5,Design Studios
