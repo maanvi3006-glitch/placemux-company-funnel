@@ -1,0 +1,13 @@
+company_id,name,created_at,clean_name,searches,registrations,jobs,impressions,clicks,conversions
+1,Example Co,2023-02-01,example co,2.0,2.0,1.0,200,20,2
+1,Example Co,2023-03-01,example co,0.0,0.0,0.0,0,0,0
+1,Example Co,2023-04-01,example co,1.0,0.0,1.0,100,10,0
+1,Example Co,2023-05-01,example co,1.0,0.0,0.0,100,10,0
+2,Acme Recruiting,2023-02-01,acme recruiting,0.0,0.0,0.0,0,0,0
+2,Acme Recruiting,2023-03-01,acme recruiting,2.0,1.0,1.0,200,20,1
+2,Acme Recruiting,2023-04-01,acme recruiting,0.0,0.0,0.0,0,0,0
+2,Acme Recruiting,2023-05-01,acme recruiting,1.0,1.0,0.0,100,10,1
+3,DataWorks Ltd,2023-02-01,dataworks ltd,0.0,0.0,0.0,0,0,0
+3,DataWorks Ltd,2023-03-01,dataworks ltd,0.0,0.0,0.0,0,0,0
+3,DataWorks Ltd,2023-04-01,dataworks ltd,2.0,1.0,1.0,200,20,1
+3,DataWorks Ltd,2023-05-01,dataworks ltd,1.0,1.0,1.0,100,10,1

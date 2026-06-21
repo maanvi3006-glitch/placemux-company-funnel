@@ -1,0 +1,5 @@
+"""Project settings and constants"""
+PROJECT_NAME = "PlaceMux Company Funnel"
+DATA_DIR = "data"
+RAW_DIR = "data/raw"
+PROCESSED_DIR = "data/processed"
